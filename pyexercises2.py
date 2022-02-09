@@ -44,3 +44,18 @@ elif av_grade >= 65 and av_grade <= 80:
     print('Pass', av_grade)
 else:
     print('Fail', av_grade)
+
+
+#Iterations
+
+#Given an integer n, write a python application which returns 
+# a times table grid for all the integers between 1 and n.
+#The grid should be separated by tabs and new lines.
+
+n = int(input("Choose an integer"))
+
+
+for i in range(1,n):
+    for j in range(1, n):
+        print(f'{i + j} ')
+    
