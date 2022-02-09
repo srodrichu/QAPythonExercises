@@ -17,11 +17,13 @@ from operator import truediv
 
 def seven(n1, n2, n3):
 
-    sort_ints = [n1, n2, n3].sort()
+    sort_ints = [n1, n2, n3]
+
+    sort_ints.sort()
 
     if (sort_ints[1] - sort_ints[0]) == (sort_ints[2] - sort_ints[1]):
         return True
-    else: 
-        return False
+    return False
 
 
+print(seven(4, 6, 2))
